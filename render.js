@@ -1,5 +1,5 @@
 'use strict';
-const HIDE = new Set(['idproduk','subkategori','kategori','foto_url']);
+const HIDE = new Set(['idproduk','subkategori','kategori','hargabeli','foto_url']);
 
 const view = () => {
   const key = S.vc + '\x01' + Q.value + '\x01' + SO.value;
