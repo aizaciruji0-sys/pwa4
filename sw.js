@@ -1,5 +1,5 @@
 'use strict';
-const C = 'db-v2';
+const C = 'db-v3';
 const F = ['index.html', 'style.css', 'state.js', 'render.js', 'sync.js', 'ui.js', 'manifest.json', 'icon.svg'];
 
 self.addEventListener('install', e => {
