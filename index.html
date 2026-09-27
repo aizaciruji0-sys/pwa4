@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="db">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="stylesheet" href="style.css">
+<title>db</title>
+</head>
+<body>
+<header id=h>
+<button data-f=menu>☰</button>
+<input id=q placeholder=filter>
+<button data-f=clear>×</button>
+<button data-a=add>+</button>
+</header>
+<span id=msg></span>
+<aside id=sb hidden>
+<button data-a=install hidden>install</button>
+<button data-a=imp>impor</button>
+<button data-a=csv>csv</button>
+<button data-a=tsv>tsv</button>
+<button data-a=txt>txt</button>
+<button data-a=duplikat>duplikat</button>
+<button data-a=json>json</button>
+<button data-a=koneksi>koneksi</button>
+<button data-a=push>push</button>
+<button data-a=pull>pull</button>
+<button data-a=schema>schema</button>
+<button data-a=wipe>wipe</button>
+</aside>
+<main>
+<div id=tools><select id=so></select></div>
+<div id=list></div>
+<div id=tail></div>
+</main>
+<footer id=ft><div id=fb></div></footer>
+<input id=f type=file accept=".csv,.tsv,.txt" hidden>
+<script src="state.js"></script>
+<script src="render.js"></script>
+<script src="sync.js"></script>
+<script src="ui.js"></script>
+<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+header{position:sticky;top:0;background:#fff;z-index:4;display:flex;flex-wrap:wrap;align-items:center;gap:4px;padding:4px}
+header input{flex:1 1 120px;min-width:0}
+header button{flex:0 0 auto}
+
+#msg{position:fixed;right:0;max-width:80vw;background:#fff;padding:2px 6px;font-size:12px;z-index:5;overflow-wrap:anywhere;text-align:right}
+
+footer{position:fixed;bottom:0;left:0;right:0;background:#fff;z-index:2;padding:4px}
+#fb{display:flex;flex-wrap:wrap;gap:4px}
+#fb button{flex:0 1 auto;min-width:0;overflow-wrap:anywhere}
+
+main{padding:8px 8px var(--fh,48px)}
+aside{position:fixed;left:0;right:0;bottom:var(--fh,0);top:var(--hh,0);background:#fff;overflow:auto;z-index:3}
+aside button:not([hidden]){display:block;width:20%}
+body.menu header>:not([data-f=menu]):not([data-f=clear]):not(#q),
+body.menu main,body.menu footer,
+body.busy header,body.busy aside,body.busy #tools,body.busy #tail{display:none}
+#tail:empty,#fb:empty{display:none}
